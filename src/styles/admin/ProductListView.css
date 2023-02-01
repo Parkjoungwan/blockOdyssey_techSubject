@@ -1,0 +1,17 @@
+.container {
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    grid-template-rows: 1.5fr 0.5fr 8fr;
+}
+
+.search {
+    grid-row: 1;
+}
+
+.amount {
+    grid-row: 2;
+}
+.productList {
+    grid-row: 3;
+}
