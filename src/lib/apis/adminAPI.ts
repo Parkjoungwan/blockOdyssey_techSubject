@@ -1,14 +1,8 @@
-import { customAxiosAuth } from "../customAxiosBase/customAxiosAuth";
+import { customAxiosAdmin } from "../customAxios/customAxiosAdmin";
+import { IGetProductList, IProductResponse } from "../../utils/types";
 
-export const authApi = {
-  postLogin: (email: string, password: string) =>
-    customAxiosAuth().post("/users/login", {
-        email: email,
-        password: password,
-    }),
-  postJoin: (email: string, password: string) =>
-    customAxiosAuth().post("/users/create", {
-        email: email,
-        password: password,
-    }),
+export const adminApi = {
+  getList: () => {
+    return customAxiosAdmin().get("/products?limit=100");
+  },
 };
