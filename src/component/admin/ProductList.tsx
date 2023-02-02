@@ -1,17 +1,25 @@
 import React from "react";
-import { useState } from "react";
 import ProductListView from "./views/ProductListView";
 import useProductList from "../../query/admin/useProductList";
-import { Iview } from "./types";
-import { IGetProductList } from "../../utils/types";
+import { Ipagination, Iview } from "./types";
+import { createSlice } from "@reduxjs/toolkit";
+import { PayloadAction } from "@reduxjs/toolkit";
+import { Provider } from "react-redux";
+import { store } from "../../store/store";
 
 const ProductList = () => {
   const { data, isLoading } = useProductList();
-  const props:Iview = {
+
+  const props: Iview = {
     isLoading,
-    ProductList: data,
-  }
-  return <ProductListView {...props}/>;
+    productList: data,
+  };
+
+  return (
+    <Provider store={store}>
+      <ProductListView {...props} />;
+    </Provider> 
+  );
 };
 
 export default ProductList;

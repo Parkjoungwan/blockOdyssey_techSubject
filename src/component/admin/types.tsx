@@ -2,5 +2,15 @@ import { IGetProductList } from "../../utils/types"
 
 export interface Iview {
     isLoading: boolean;
-    ProductList: IGetProductList | undefined;
+    productList: IGetProductList | undefined;
+}
+
+export interface Ipagination {
+    pageNumber: number;
+    rowNumber:number;
+}
+
+export interface Isearch {
+    condition: string;
+    keyword: string;
 }
