@@ -95,7 +95,7 @@ const ProductListView = ({
   }
   return (
     <div className="container">
-      <div className="serach">
+      <div className="search">
         <select value={searchCondition} onChange={onCondition}>
           <option value={"all"}>전체</option>
           <option value={"title"}>상품명</option>
@@ -109,7 +109,7 @@ const ProductListView = ({
         총 갯수{" "}
         {listResult ? listResult.length + (Number(page) - 1) * Number(rows) : 0}
       </div>
-      <div className="productListConatiner">
+      <div className="productListContainer">
         <div className="productList">
           <div className="id">상품번호</div>
           <div className="title">상품명</div>
