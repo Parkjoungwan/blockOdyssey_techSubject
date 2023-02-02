@@ -1,11 +1,6 @@
-import React, { useEffect, useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
-import { arrayBuffer } from "stream/consumers";
-import { changePage } from "../../../store/paginationSlice";
-import { changeKeyword } from "../../../store/searchSlice";
-import { RootState } from "../../../store/store";
+import React, { useState } from "react";
 import "../../../styles/admin/ProductListView.css";
-import { IGetProductList, IProductResponse } from "../../../utils/types";
+import { IProductResponse } from "../../../utils/types";
 import { Iview } from "../types";
 
 const ProductListView = ({

@@ -2,8 +2,6 @@ import React from "react";
 import ProductListView from "./views/ProductListView";
 import useProductList from "../../query/admin/useProductList";
 import { Iview } from "./types";
-import { Provider } from "react-redux";
-import { store } from "../../store/store";
 
 const ProductList = () => {
   const { data, isLoading } = useProductList();
@@ -29,9 +27,7 @@ const ProductList = () => {
     keyword,
   };
   return (
-    <Provider store={store}>
       <ProductListView {...props} />
-    </Provider>
   );
 };
 
