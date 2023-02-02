@@ -66,30 +66,49 @@ const ProductListView = ({
     setSearchCondition(e.target.value);
   };
   const onRow = (e: React.ChangeEvent<HTMLSelectElement>) => {
-    setRowNum(e.target.value);
+    window.location.href =
+      "/admin/productList?page=1&rows=" +
+      e.target.value +
+      "&condition=" +
+      searchCondition +
+      "&keyword=" +
+      searchKeyword;
   };
   const makePageation = () => {
-      let arr = []
-      let lastNumber = 0;
-      if (listResult && listResult?.length % Number(rowNum) === 0)
-        lastNumber = Math.floor((listResult.length + (Number(page) - 1) * Number(rows)) / Number(rowNum))
-      else if (listResult)
-        lastNumber = Math.floor((listResult.length + (Number(page) - 1) * Number(rows)) / Number(rowNum) + 1)
-      for (let i = 1; i <= lastNumber; i++) {
-        arr.push(
-        <button key={i} onClick={()=>{
-          window.location.href =
-          "/admin/productList?page="+ i +"&rows=" +
-          rowNum +
-          "&condition=" +
-          searchCondition +
-          "&keyword=" +
-          searchKeyword;
-        }}>{i}</button>
-        )
-      }
-      return arr;
-  }
+    let arr = [];
+    let lastNumber = 0;
+    if (listResult && listResult?.length % Number(rowNum) === 0)
+      lastNumber = Math.floor(
+        (listResult.length + (Number(page) - 1) * Number(rows)) / Number(rowNum)
+      );
+    else if (listResult)
+      lastNumber = Math.floor(
+        (listResult.length + (Number(page) - 1) * Number(rows)) /
+          Number(rowNum) +
+          1
+      );
+    for (let i = 1; i <= lastNumber; i++) {
+      arr.push(
+        <button
+          key={i}
+          onClick={() => {
+            window.location.href =
+              "/admin/productList?page=" +
+              i +
+              "&rows=" +
+              rowNum +
+              "&condition=" +
+              searchCondition +
+              "&keyword=" +
+              searchKeyword;
+          }}
+        >
+          {i}
+        </button>
+      );
+    }
+    return arr;
+  };
   if (isLoading) {
     return <>Loading</>;
   }

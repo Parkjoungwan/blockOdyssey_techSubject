@@ -22,7 +22,6 @@ root.render(
   <React.StrictMode>
     <QueryClientProvider client={queryClient}>
       <App />
-      <ReactQueryDevtools />
     </QueryClientProvider>
   </React.StrictMode>
 );
