@@ -69,7 +69,8 @@ src
 
 - 어드민 페이지로 이동
     
-    ![어드민 페이지 이동.gif](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/d5f2a1c6-891b-4ab5-8ece-4bd5314bc143/%E1%84%8B%E1%85%A5%E1%84%83%E1%85%B3%E1%84%86%E1%85%B5%E1%86%AB_%E1%84%91%E1%85%A6%E1%84%8B%E1%85%B5%E1%84%8C%E1%85%B5_%E1%84%8B%E1%85%B5%E1%84%83%E1%85%A9%E1%86%BC.gif)
+![어드민 페이지 이동](https://user-images.githubusercontent.com/48785968/216260926-b709d247-8b4b-4b63-bd8e-8bffa3537edd.gif)
+
     
 - 검색 조건 및 검색
     
