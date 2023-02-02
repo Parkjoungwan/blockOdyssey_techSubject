@@ -82,7 +82,7 @@ src
     
 - 새로고침 후 데이터 확인
     
-![행 수 변경 및 페이지네이션](https://user-images.githubusercontent.com/48785968/216261117-aaec8556-5d5a-41f4-ac33-38c848752023.gif)
+![새로고침 확인](https://user-images.githubusercontent.com/48785968/216261126-fa636d83-d0bd-4c44-9820-63dd39664cb1.gif)
     
 
 # 고민한 부분
