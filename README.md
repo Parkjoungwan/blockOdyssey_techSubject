@@ -74,15 +74,15 @@ src
     
 - 검색 조건 및 검색
     
-    ![조건 변경 및 검색.gif](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/b82ce01c-ceb2-46af-9f2d-b9bdadd53a90/%E1%84%8C%E1%85%A9%E1%84%80%E1%85%A5%E1%86%AB_%E1%84%87%E1%85%A7%E1%86%AB%E1%84%80%E1%85%A7%E1%86%BC_%E1%84%86%E1%85%B5%E1%86%BE_%E1%84%80%E1%85%A5%E1%86%B7%E1%84%89%E1%85%A2%E1%86%A8.gif)
+![조건 변경 및 검색](https://user-images.githubusercontent.com/48785968/216261103-c36fce7c-0355-4f33-8d7d-0d1f9b41e5dd.gif)
     
 - 행 수 변경 및 페이지 네이션
     
-    ![행 수 변경 및 페이지네이션.gif](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/fa3be2ce-4de7-461e-b92c-9b64ae24ebaa/%E1%84%92%E1%85%A2%E1%86%BC_%E1%84%89%E1%85%AE_%E1%84%87%E1%85%A7%E1%86%AB%E1%84%80%E1%85%A7%E1%86%BC_%E1%84%86%E1%85%B5%E1%86%BE_%E1%84%91%E1%85%A6%E1%84%8B%E1%85%B5%E1%84%8C%E1%85%B5%E1%84%82%E1%85%A6%E1%84%8B%E1%85%B5%E1%84%89%E1%85%A7%E1%86%AB.gif)
+![행 수 변경 및 페이지네이션](https://user-images.githubusercontent.com/48785968/216261117-aaec8556-5d5a-41f4-ac33-38c848752023.gif)
     
 - 새로고침 후 데이터 확인
     
-    ![새로고침 확인.gif](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/b716b28d-b4ef-49c3-baa0-1892c0630f5c/%E1%84%89%E1%85%A2%E1%84%85%E1%85%A9%E1%84%80%E1%85%A9%E1%84%8E%E1%85%B5%E1%86%B7_%E1%84%92%E1%85%AA%E1%86%A8%E1%84%8B%E1%85%B5%E1%86%AB.gif)
+![행 수 변경 및 페이지네이션](https://user-images.githubusercontent.com/48785968/216261117-aaec8556-5d5a-41f4-ac33-38c848752023.gif)
     
 
 # 고민한 부분
