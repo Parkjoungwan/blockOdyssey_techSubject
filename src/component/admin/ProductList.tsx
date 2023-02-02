@@ -18,7 +18,7 @@ const ProductList = () => {
     if (param[0] === "?page") page = param[1];
     if (param[0] === "rows") rows = param[1];
     if (param[0] === "condition") condition = param[1];
-    if (param[0] === "keyword") keyword = param[1];
+    if (param[0] === "keyword") keyword = param[1].replaceAll("%20", " ");
   }
   const props: Iview = {
     isLoading,
@@ -30,7 +30,7 @@ const ProductList = () => {
   };
   return (
     <Provider store={store}>
-      <ProductListView {...props} />;
+      <ProductListView {...props} />
     </Provider>
   );
 };

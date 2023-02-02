@@ -52,4 +52,8 @@
 }
 .pagenation {
   grid-row: 3;
+  display: flex;
+}
+.pagenum {
+    margin: 5px;
 }

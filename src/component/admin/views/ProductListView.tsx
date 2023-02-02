@@ -1,5 +1,6 @@
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
+import { arrayBuffer } from "stream/consumers";
 import { changePage } from "../../../store/paginationSlice";
 import { changeKeyword } from "../../../store/searchSlice";
 import { RootState } from "../../../store/store";
@@ -67,6 +68,28 @@ const ProductListView = ({
   const onRow = (e: React.ChangeEvent<HTMLSelectElement>) => {
     setRowNum(e.target.value);
   };
+  const makePageation = () => {
+      let arr = []
+      let lastNumber = 0;
+      if (listResult && listResult?.length % Number(rowNum) === 0)
+        lastNumber = Math.floor((listResult.length + (Number(page) - 1) * Number(rows)) / Number(rowNum))
+      else if (listResult)
+        lastNumber = Math.floor((listResult.length + (Number(page) - 1) * Number(rows)) / Number(rowNum) + 1)
+      for (let i = 1; i <= lastNumber; i++) {
+        arr.push(
+        <button key={i} onClick={()=>{
+          window.location.href =
+          "/admin/productList?page="+ i +"&rows=" +
+          rowNum +
+          "&condition=" +
+          searchCondition +
+          "&keyword=" +
+          searchKeyword;
+        }}>{i}</button>
+        )
+      }
+      return arr;
+  }
   if (isLoading) {
     return <>Loading</>;
   }
@@ -98,7 +121,7 @@ const ProductListView = ({
           {listResult?.map((Product, index) => {
             if (index >= Number(rowNum) + 1) return false;
             return (
-              <>
+              <React.Fragment key={Product.id}>
                 <div className="id">{Product.id}</div>
                 <div className="title">{Product.title}</div>
                 <div className="brand">{Product.brand}</div>
@@ -110,7 +133,7 @@ const ProductListView = ({
                 <div className="price">{Product.price}</div>
                 <div className="rating">{Product.rating}</div>
                 <div className="stock">{Product.stock}</div>
-              </>
+              </React.Fragment>
             );
           })}
         </div>
@@ -120,6 +143,7 @@ const ProductListView = ({
             <option value={"20"}>20</option>
             <option value={"50"}>50</option>
           </select>
+          {makePageation()}
         </div>
       </div>
     </div>
