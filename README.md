@@ -99,4 +99,4 @@ src
 
 23.01.31 ~ 23.02.02(7시까지 제출)
 
-[notionLink](https://www.notion.so/Front-Deep-Dive-44e836c8296d4eaea161879620b7c786)
+[notionLink](https://charm-sunstone-aae.notion.site/f5ed49b4b0544884b59f40c3be2923d2)
