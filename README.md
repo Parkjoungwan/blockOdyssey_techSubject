@@ -58,6 +58,9 @@ src
 - npm 또는 yarn이 없다면 설치해주세요.
 
 ```markdown
+- npm install
+- yarn install
+[둘 중 하나로 모듈을 설치해주세요.]
 - npm start
 - yarn start
 [둘 중 하나로 실행시켜주세요.]
